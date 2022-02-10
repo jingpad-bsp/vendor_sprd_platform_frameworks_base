@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/* //frameworks/base/core/res/res/values/strings.xml
+** Modify Text for cta
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="permlab_readSms">"读取短信/彩信"</string>
+    <string name="permlab_writeContacts">"新建/修改/删除您的通讯录"</string>
+</resources>

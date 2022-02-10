@@ -1,0 +1,13 @@
+android_app {
+    name: "CtaSecurityTools",
+    resource_dirs: ["res"],
+    srcs: ["src/**/*.java"],
+
+    certificate: "platform",
+
+    static_libs: [
+        "com.google.android.material_material",
+        "androidx.core_core",
+        "androidx.appcompat_appcompat",
+    ],
+}

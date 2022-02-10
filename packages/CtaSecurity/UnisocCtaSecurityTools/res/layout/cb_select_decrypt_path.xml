@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/decrypt_path_edit"
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:scrollHorizontally="true"
+            android:inputType="text"
+            android:gravity="fill_horizontal"
+            android:layout_weight="1"
+            android:layout_marginTop="3dip"
+            android:layout_marginLeft="10dip"
+            android:focusable="false"
+            android:clickable="false"
+            android:longClickable="false"
+            />
+        <Button
+            android:id="@+id/select_path"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:text="@string/select"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginTop="3dip"
+            android:layout_marginRight="10dip"
+            android:textColor="@color/btn_materiallight"
+            android:background="?android:attr/selectableItemBackground"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/select_path_cancel"
+            android:layout_width="125dip"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:paddingBottom="4dip"
+            android:paddingTop="4dip"
+            android:textColor="@color/btn_materiallight"
+            android:background="?android:attr/selectableItemBackground"
+            />
+        <Button
+            android:id="@+id/select_path_ok"
+            android:layout_width="125dip"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:paddingBottom="4dip"
+            android:paddingTop="4dip"
+            android:textColor="@color/btn_materiallight"
+            android:background="?android:attr/selectableItemBackground"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

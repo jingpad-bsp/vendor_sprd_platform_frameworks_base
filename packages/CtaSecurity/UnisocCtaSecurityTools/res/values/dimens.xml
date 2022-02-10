@@ -1,0 +1,57 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="app_icon_size">44dip</dimen>
+    <dimen name="app_icon_padding">2dip</dimen>
+    <dimen name="app_content_size">12sp</dimen>
+    <dimen name="app_name_size">18sp</dimen>
+    <dimen name="word_padding_pic">10dip</dimen>
+
+    <dimen name="arrow_size">32dip</dimen>
+
+    <dimen name="title_log_size">32dip</dimen>
+    <dimen name="switch_width">75dip</dimen>
+    <dimen name="switch_height">34dip</dimen>
+    <dimen name="title_word_size">16sp</dimen>
+
+    <dimen name="line_width">1px</dimen>
+    <dimen name="main_page_divider_width">2.4dip</dimen>
+    <dimen name="main_page_divider_height">20dip</dimen>
+
+    <dimen name="margin_border_size">4dip</dimen>
+
+    <dimen name="switch_dialog_width">320dip</dimen>
+
+    <dimen name="switch_dialog_height">242sp</dimen>
+    <dimen name="checkbox_dialog_height">165sp</dimen>
+    <dimen name="delete_all_log_dialog_height">130sp</dimen>
+
+    <dimen name="switch_dialog_title_text_size">20sp</dimen>
+    <dimen name="switch_dialog_content_text_size">16sp</dimen>
+    <dimen name="switch_dialog_alear_icon_size">32dip</dimen>
+
+    <dimen name="set_delete_time_dialog_height">280sp</dimen>
+    <dimen name="init_progress_dialog_height">280sp</dimen>
+
+    <dimen name="custom_dialog_title_text_size">20sp</dimen>
+    <dimen name="custom_dialog_content_text_size">16sp</dimen>
+    <dimen name="custom_dialog_alear_icon_size">32dip</dimen>
+    <dimen name="custom_dialog_title_height">56dip</dimen>
+
+    <dimen name="checkbox_view_height">48sp</dimen>
+
+    <dimen name="list_view_item_height">48dip</dimen>
+    <dimen name="list_item_padding_left">20dip</dimen>
+    <dimen name="list_text_title_size">16sp</dimen>
+    <dimen name="list_text_summary_size">12sp</dimen>
+    <dimen name="list_item_margin_rl">20dip</dimen>
+    <dimen name="list_itme_appname_size">204dip</dimen>
+
+    <dimen name="radio_button_text_size">20sp</dimen>
+    <dimen name="radio_button_dialog_width">288dip</dimen>
+</resources>

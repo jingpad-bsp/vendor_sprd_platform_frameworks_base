@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.unisoc.ccsa"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:sharedUserId="android.uid.system">
+
+    <uses-permission android:name="android.permission.BIND_DEVICE_ADMIN" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.MASTER_CLEAR" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <permission android:name="com.unisoc.ccsa.permission.provider.READ_DATABASE" />
+    <permission android:name="com.unisoc.ccsa.permission.provider.WRITE_DATABASE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.CCSA" />
+                <category android:name="android.intent.category.CCSA" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- rdc begin -->
+        <activity
+            android:name="com.unisoc.ccsa.rdc.SettingsActivity"
+            android:label="@string/title_personal"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SETTING" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.unisoc.ccsa.rdc.GuideDialogActivity"
+            android:label="@string/op_guide"
+            android:screenOrientation="portrait" />
+
+        <!-- device manager -->
+        <receiver
+            android:name="com.unisoc.ccsa.rdc.receiver.AdminReceiver"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/lock_screen" />
+
+            <intent-filter>
+                <action android:name="android.app.action.ACTION_PASSWORD_CHANGED" />
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+                <action android:name="android.app.action.DEVICE_ADMIN_DISABLED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.unisoc.ccsa.rdc.receiver.BootReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.unisoc.ccsa.rdc.receiver.SmsReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.unisoc.ccsa.rdc.receiver.ServiceStateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.SIM_STATE_CHANGED" />
+                <action android:name="android.intent.action.SERVICE_STATE" />
+                <action android:name="android.intent.action.SERVICE_STATE0" />
+                <action android:name="android.intent.action.SERVICE_STATE1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.unisoc.ccsa.rdc.service.CmdPerformerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.sprd.security.SmsHandleService" />
+            </intent-filter>
+        </service>
+        <!-- rdc end -->
+
+        <!-- crypt box begin -->
+        <activity android:name="com.unisoc.ccsa.crypt.CryptBoxActivity" />
+        <activity android:name="com.unisoc.ccsa.crypt.filelistview.SelectPathListActivity" />
+        <!-- crypt box end -->
+    </application>
+
+</manifest>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration description="Config for UNISOC AMS FEATURE test cases">
+    <option name="test-suite-tag" value="cts" />
+    <option name="config-descriptor:metadata" key="component" value="framework" />
+
+    <test class="com.android.compatibility.common.tradefed.testtype.JarHostTest" >
+        <option name="jar" value="CtsAMSFeatureVerifyTestCases.jar" />
+        <option name="runtime-hint" value="40m20s" />
+    </test>
+</configuration>

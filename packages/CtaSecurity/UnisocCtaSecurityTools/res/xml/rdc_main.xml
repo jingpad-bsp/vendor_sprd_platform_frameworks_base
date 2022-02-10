@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.unisoc.ccsa.rdc.RDCSwitchPreference
+        android:key="RDCswitch_pref"
+        android:summary="@string/rdc_summary"
+        android:title="@string/rdc_title" />
+
+    <com.unisoc.ccsa.rdc.SettingsPreference
+        android:dependency="RDCswitch_pref"
+        android:key="settings_pref"
+        android:summary="@string/summ_personal"
+        android:title="@string/title_personal"/>
+
+    <PreferenceCategory android:title="@string/category_title" >
+        <Preference
+            android:key="reset_pref"
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:summary="@string/op_guide"
+            android:title="@string/guide_title_remote_clean" />
+        <Preference
+            android:key="lock_pref"
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:summary="@string/op_guide"
+            android:title="@string/guide_title_remote_lock" />
+        <Preference
+            android:key="reletives_pref"
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:summary="@string/op_guide"
+            android:title="@string/guide_title_reletives_number" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

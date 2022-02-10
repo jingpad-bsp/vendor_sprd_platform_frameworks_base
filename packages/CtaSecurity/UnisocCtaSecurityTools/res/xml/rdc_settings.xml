@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.unisoc.ccsa.rdc.PasswdDialogPreference
+        android:dialogTitle="@string/dialog_title"
+        android:key="editPassword_pref"
+        android:persistent="false"
+        android:summary="@string/summ_changePW"
+        android:title="@string/summ_changePW" />
+
+    <com.unisoc.ccsa.rdc.ReletivesNumSettingPreference
+        android:key="settingReletives_pref"
+        android:persistent="false"
+        android:summary="@string/summ_reletives_setting"
+        android:title="@string/title_reletives_setting" />
+</PreferenceScreen>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/group_divider1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/remote_data_control"
+            android:icon="@drawable/ic_menu_rdc"
+            android:title="@string/menu_remote_data_control" />
+        <item
+            android:id="@+id/crypt_box"
+            android:icon="@drawable/ic_menu_crypt"
+            android:title="@string/menu_crypt_box" />
+        <item
+            android:id="@+id/phone_number"
+            android:icon="@drawable/ic_menu_phone"
+            android:title="@string/menu_phone_number" />
+    </group>
+
+
+    <group
+        android:id="@+id/group_divider2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/about_ccsa"
+            android:icon="@drawable/ic_menu_about"
+            android:title="@string/menu_about_ccsa" />
+
+    </group>
+
+</menu>

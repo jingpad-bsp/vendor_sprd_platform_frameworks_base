@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+/* //frameworks/base/core/res/res/values/strings.xml
+** Modify Text for cta
+*/
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="permlab_readSms">read SMS/MMS</string>
+    <string name="permlab_writeContacts">write your contacts</string>
+</resources>

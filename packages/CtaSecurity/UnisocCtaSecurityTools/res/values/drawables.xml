@@ -1,0 +1,7 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="ic_menu_permission" type="drawable">@drawable/ic_menu_permission</item>
+    <item name="ic_menu_crypt" type="drawable">@drawable/ic_menu_crypt</item>
+    <item name="ic_menu_rdc" type="drawable">drawable/ic_menu_rdc</item>
+    <item name="ic_menu_phone" type="drawable">drawable/ic_menu_phone</item>
+    <item name="ic_menu_about" type="drawable">drawable/ic_menu_about</item>
+</resources>
